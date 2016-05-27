@@ -1,0 +1,349 @@
+http://www.alloprof.qc.ca/bv/pages/p1020.aspx pour tous site :)
+java threads: https://dzone.com/articles/painless-introduction-javas-threadlocal-storage
+aha moments: http://betterexplained.com/articles/aha-moments-when-learning-git/
+https://en.wikipedia.org/wiki/Financial_market
+https://git-scm.com/book/no-nb/v1/Git-Branching-Basic-Branching-and-Merging
+http://longair.net/blog/2009/04/16/git-fetch-and-merge/
+https://www.nginx.com/blog/introduction-to-microservices/
+http://cibretagne.org/news/liens/courshtm/Java/javaj2eejsp.html
+http://www.vogella.com/tutorials/JavaConcurrency/article.html
+https://code.google.com/codejam/contests.html
+
+La-nceput, pe când fiinta nu era, nici nefiinta,
+Pe când totul era lipsa de viata si vointa,
+Când nu s-ascundea nimica, desi tot era ascuns...
+Când patruns de sine însusi odihnea cel nepatruns.
+Fu prapastie? genune? Fu noian întins de apa?
+N-a fost lume priceputa si nici minte s-o priceapa,
+Caci era un întuneric ca o mare far-o raza,
+Dar nici de vazut nu fuse si nici ochi care s-o vaza.
+Umbra celor nefacute nu-ncepuse-a se desface,
+Si în sine împacata stapânea eterna pace!...
+Dar deodat-un punct se misca... cel întâi si singur. Iata-l
+Cum din chaos face muma, iara el devine Tatal!...
+Punctu-acela de miscare, mult mai slab ca boaba spumii,
+E stapânul fara margini peste marginile lumii...
+De-atunci negura eterna se desface în fasii,
+De atunci rasare lumea, luna, soare si stihii...
+De atunci si pâna astazi colonii de lumi pierdute
+Vin din sure vai de chaos pe carari necunoscute
+Si în roiuri luminoase izvorând din infinit,
+Sunt atrase în viata de un dor nemarginit.
+
+unda sonora misca mina de grafit, care întrerupea sau refacea circuitul electric, transformând sunetul într-un semnal electric.
+http://szabika1987.tripod.com/id5.html electromagnetism
+
+AKKA
+OR
+When an Akka actor is sent a message, a job is submitted to the executor. When there is a free thread, it calls the job which obtains a lock on the actor (assuming it can, otherwise another job is taken). The receive method of the actor is then called and once it completes, the job is discarded and the thread returned to the pool. The cycle is then repeated. All the complicated stuff related to concurrent threads is handled by Akka, freeing the programmer to concentrate on solving business problems.
+When a message is sent to an actor, it is placed in this actor's queue called mailbox. At the same time there can be hundreds or thousands of actors having pending messages in their mailboxes. Akka, using limited number of worker threads, selects a subset of such actors and calls their receive method with each and every message from mailbox in chronological order.
+More than one thread never handles the same actor. Also Akka may decide to interrupt processing of messages from a mailbox and select different actor to remain fair and avoid starvation. Because one thread is needed for each receive invocation, this method should never block, wait or sleep.
+
+http sessions
+---------------
+Because HTTP is stateless, in order to associate a request to any other request, you need a way to store user data between HTTP requests. 
+Cookies or URL parameters ( for ex. like http://example.com/myPage?asd=lol&boo=no ) are both suitable ways to transport data between 2 or more request. However they are not good in case you don't want that data to be readable/editable on client side.
+The solution is to store that data server side, give it an "id", and let the client only know (and pass back at every http request) that id. There you go, sessions implemented. Or you can use the client as a convenient remote storage, but you would encrypt the data and keep the secret server-side.
+
+
+
+Micro services platform written in Scala (spray framework) performing various operations as top-up or gifting.
+Platform is deployed in Bluemix Cloud environment.
+Each service has 3 corresponding edge services dealing with client HTTP connections (consumer, subscriber and platform) and one internal service
+implementing the business logic (communication with Cloudant no sql db).
+Swagger code generation tool is used with edge services for specifind supported client requests and possible responses, as well as model data 
+types exchanged between communicating parties.
+Swagger usage was intended to offer substantial support in care of adge services versioning (by documentation genartion also provided).
+Edge services and internal service as well as internal services communicate using AMQP: source client will place JSON message to specific queue 
+the destination listens and the source will also listens for a response from destination on one of: succes, reject or failure topics.
+Unique identifier is used for matching messages in distributed environment.
+Tech tools: Scala, Akka, Bluemix cloud, spray web services framework, spray-can HTTP server, Cloudant NOSQL db
+
+
+Tool for date reconciliation developed with Java7.
+Custom ETL tool was developed to efficiently compare base and test data coming from various sources (file or relational db) 
+using provided column mapping and comparison functions.
+Data comparison will happen taking into consideration some key columns (data rows that match considering the unique columns but that not match 
+according to the rest of columns will be reported as breaking).
+Result of comparison will be one of: matched, unmatched or breaking. Comparison results will be gathered in a report.
+Data sets will be sorted before (reasonable sized data sets are sorted in memory while large data sets will be splitted in smaller chunks and
+sorting results will be stored on hard drive).
+GUI for job comparison configuration was developed using Java FX.
+
+Cum pot failui actorii akka
+----------------------------
+With the Actors implementation in Akka, there are two ways multiple threads can execute actions on shared memory:
+
+if a message is sent to an actor (e.g. by another actor). In most cases messages are immutable, but if that message is not a properly constructed immutable object, without a "happens before" rule, it would be possible for the receiver to see partially initialized data structures and possibly even values out of thin air (longs/doubles).
+if an actor makes changes to its internal state while processing a message, and accesses that state while processing another message moments later. It is important to realize that with the actor model you don't get any guarantee that the same thread will be executing the same actor for different messages.
+To prevent visibility and reordering problems on actors, Akka guarantees the following two "happens before" rules:
+
+The actor send rule: the send of the message to an actor happens before the receive of that message by the same actor.
+The actor subsequent processing rule: processing of one message happens before processing of the next message by the same actor.
+
+RO 78 INGB 0000999902476984
+
+A!123456a
+launch S:\_cmd\Homologation\nrc_int/uat/hom etc
+
+
+Cristina Ionita <cristina.vata@gmail.com>
+9/25/12
+
+to me 
+
+MI1059031
+
+RO 78 INGB 0000999902476984
+
+
+
+
+Contul Beneficiarului:
+RO 16 BRDE 410SV88195774100
+
+Numele Beneficiarului:
+Cristina Ionita
+
+Banca Beneficiarului:
+BRD GROUPE SOCIETE GENERALE CENTRAL     
+ 
+Nana cont RO 28 RZBR 0000060013569122
+
+daniel.ionescu@endava.com
+@Liberator
+
+
+varza
+ciuperci
+praz cu masline
+orez+porumb
+ou+conopida
+broccoli
+
+orez
+paste
+praz+masline
+mazare+porumb
+spanac+ou+branza
+cartofi
+ciuperci
+telina+morcov
+ardei copt
+dovlecei+vinete
+tarta cu somon
+broccoli
+conopida
+varza
+varza bxl
+tocanita shaorma salata de ardei
+paste+legume
+musaca
+chiftelute cu legume
+
+salata chia
+
+vladi plus
+===============
+aseara ti-am luat cercei, neneeeee!
+am clocit o uratanie (statea pe o carte cu o vrajitoare urata)
+mananc maruntzish (fulgi)
+potel=hotel
+buhet
+balize=valize
+fasoleta (=casoleta)
+blond cu ochi albastri - asa l-au facut la fabrica
+ma lupt cu frigul (cand am deschis fereastra)
+mesterul bormaseste? 
+- tati, ai scame in par - nu sunt scame, pui, e par alb - ai imbatranit, tati?
+sare piureul din cusca lui
+am pus carti la vrabiute, sa citeasca si ele
+un papu e in linie si unul in cruce
+(cu o bucatica dintr-un pai de spaghetti) o pastrez ca sa i-o duc lui evelina in parc ca sa vada cat e de mica
+wolsvagen?? cu doi de la min e(2 de V de la Vladut)
+mami, te-ai imbracat in flori (bluza inflorata). De ce nu te mai imbraci in.. flori negre? (probabil mono-culoare)
+hi cu nana!
+aveam o surubelnita potrivita, dar i-a intrat lui tati sub piela (spus vanzatoarei de la care am luat o.. surubelnita)
+mami de ce te-ai suparat? nu, mami, esti bucurita
+(cand a varsat vaza si eu stergeam pe jos) hai mami, aproape ai sters apa!
+tragem fermoarul (nu vorbim)
+crema de floarea soarelui (crema de soare)
+am reparat-o pe marilena (pisica lui tamti nicoleta) (cu serubelnita). -Dar ce defectiune avea? - I se dezlipise coada :))))
+(nu mai avem lamaie pentru guacamole... dupa ceva vreme in care chiar manca salata:) -o mancam asa chioara
+martz (martisor)
+mansina
+la ce te gandesti, mami? (2 ani si 6 luni... iar eu ma gandeam ca baiatul asta a devenit grozav de greu de convins sa faca chestii normale)
+(de ce esti incruntata?)
+tu de ce nu esti doctor mami?
+si cum s-au mai lovit copiii? si cum s-au mai lovit copiii? etc.
+ce balamuc! (mergand pe alunisului si fiind foarte aglomerat) - vai de mama ei! (despre ceva storcit)
+-unde e mami? -in curte, vine imediat - am si o mami mai mare -si unde e? -aici (si atinge umarul lui dan)
+-nu am luat flori de la piata, de la babute!
+nu vorbi! pai nu vorbi! sa nu vezi!
+cancomat????
+bia (dorinica, dorina etc si paulina)
+avem gabriele, sa mai mancam o gabriela, uite o gabriela, iti dau o gabriela etc. (rafaello - pentru ca ii daduse gabriela in parc)
+unde te duci caine, la electrocutare?
+-are tata tepi? -pupi pe tata? -n-am timp!
+m-am (~imprietenit) cu sacul de iarba -ce ai facut? -m-am intragostit de sacul de iarba
+(la 2 ani si 8 luni) a pornit masina si a facut hac! in  tufis
+ai lama de ras, sa tai tepii ma gandesc - nu am - o sa ai cand cresti
+na! ii zic prescurtat (nanei)
+o acadea cu rosu, galben si albastru - cu ce seamana> - cu chilotii tai :))))
+
+assembly + XL deploy
+--------------------
+https://dpyprdap11.fr.world.socgen/
+mvn clean install assembly:directory -Dmaven.test.skip=true -Dmaven.site.skip=true -Dmaven.javadoc.skip=true
+mvn deployit:deploy
+
+Mi-am setat de mult dorinta sau curajul sau decizia pur si simplu... sa(-ti :) stiu... soc...) scriu... 
+Nu aveam nimic de pierdut nici inainte, dar acum pot sa fac ceea ce probabil ca e interactiunea mea preferata..  Acum am.. si mai putin decat nimic.. de pierdut... si am de castigat... a nice feeling, sure.
+Pentru tine (soc? probabil ca inca  nu esti sigur ca esti destinatarul) n-ar trebui sa fie prea rau... nici macar o poveste.. dar o lectura. Lecturile proaste sunt pretutindeni... ce mai conteaza una in plus? Desigur...
+lecturile despre sine sunt foarte rare... ceea ce le face oarecum interesante.
+Va fi o lectura care va dilata muult... aproape nimic.. si va contracta tot restul. 
+Va fi in ultima instanta o confirmare si atat. Da, (nu stiu de ce/nu ma intereseaza/daca ma intrebi, am sa incerc sa raspund sau oricum n-as rezista tentatiei, dar oricum nu prea o sa ai cum sa intrebi)... mi-ar fi placut 
+sa vorbim. As fi putut descoperi orice.. dar inceputul ar fi fost.. chiar frumos (un cuvand banal, doar ca nici nu imi amintesc cand l-am folosit ultima data)... (adica) armonios.. placut...  Sau aveam dispozitia sa fie... 
+Cred ca nici descoperirile nu ar fi putut duce in neplacut.. cel mai rau ar fi putut duce in stingere... iar stingerea presupune impacare si nu e neplacuta. Stingerea e buna.
+De ce? Vorbitul imi aduce ceva ce nu am indeajuns si probabil ca apreciez ... e si mai rar sa am un plan/adica sa stiu impresia pe care vreau sa o lase ce zic... si de data asta stiam. Era banala impresie a... simpatiei (a se intelege
+ce vrei, dar de preferat a se intelege ce am vrut eu sa spun :))) )...in la fel de banala haina a... atitudinii de... faci pe prostul. Poate suna rau... cand faci pe prostul... intelegi, aproximezi... dar nu detaliezi foarte tare...
+nu ai ce descoperi inainte de a ajunge la sentimentul ca totul e lipsit de sens.
+Si inca  de ce... Pentru ca m-am alinat la un moment dat cu ideea ca daca plec si mai are vreo insemnatate, scriu. O reactie la limita. Alte idei de inceput au fost.. de fapt nu imi mai amintesc decat de una.. tii interviuri? 
+cum le tii? (stiu deja raspunsul la cea mai semnificativa intrebare.. ce faci.. asa ca intreb mai departe dupa cum cred eu ca e mai semnificativ). 
+Aa.. si alta: "e numai o problema de timp" (cand o sa dam semne ca ne cunastem).. n-a fost o problema de timp, probabil ca raspunsul ar fi continuat pentru multa vreme sa fie... niciodata. M-am inselat...
+Pentru ca plec (am plecat) suficient de repede.. mai are insemnatate... sper ca toata tarasenia sa fie... ca un cadou. In plus.. cred ca merita sa ramana un semn... asta face lumea si incurcatele ei semnale mai de incredere.
+Nu am un plan despre ce mai vreau sa spun... dar am sa leg actuala poveste (intamplare?) de cateva din marile mele descoperiri... din placerea mea.. si pentru sansa de a ridica actuala lectura la un oarecare nivel de relevanta.
+In primul rand.. probabil ca fac o greseala... descoperirea mea este ca a zis cineva (un destept) ca multe se schimba, doar oamenii trec din greseala in greseala... 
+In al doilea rand... contrabalanta...  poate ca intr-o anume perspectiva.. are sens... La ce ar putea servi? A zis altcineva (tot un destept) ca are sens sa admitem ca "merita" daca intr-un sens, oricat de larg, "serveste minunii 
+creatiei"... ceea ce pentru mine inseamna sa se constante ca intre noi, oamenii... uite ca se gaseste cineva ca mine... care sa faca ceea ce fac... sa zicem sa ii scrie cuiva.. ca tine (ca sa fie echilibrata fraza... 
+Evident ca nu stiu nimic din ce ar fi de spus la partea 'ca tine'... dar evident ca ai partea ta de minune).
+Pana aici mi-ar fi placut sa nu ma intrerupi.. dar aici.. as prefera deocamdata o intrebare.. nu va veni... Mai rezolvam o data utilizandu-ne creativitatea exersata... sau amintindu-ne o poveste... doi barbati merg spre locul x si
+promisesera ca nu vor spune o vorba cat va fi drumul de lung. Numai ca pe drum vad pe marginea unui rau o femeie care se ineca. Sar n ajutorul ei si unul dintre ei cara femeia in spate pana la un loc sigur... unde o depune... 
+fara sa spuna o vorba, conform intelegerii. Pe ea nu o mai urmarim, adica nu-i mai detaliem mirarea, opiniile, suferintele, temerile etc.. nu pentru ca n-ar conta, probabil, ci pentru ca trebuie sa fim scurti, relevanti si de 
+efect. Dar ii urmarim pe oamenii supusi propriei promisiuni... Dupa o vreme, .. -am uitat despre ce vorbeau-... cel care asistase la caratul femeii il intreba (retoric) pe cel care o carase - sa nu-mi spui ca tu inca o cari?! Povestea imi place 
+nu neaparat pentru mesajul care ar fi putut fi probat in multe feluri, unele probabil mai bune (ce nu e spus sau, mai bine, explicat, nu se termina niciodata, te lasa neimpacat sa zicem) ci pentru ca mi se pare o imposibila 
+rezistenta sa nu zici chiar nimic... Nu as promite asa ceva decat pentru o miza importanta si ca sa fiu sigura.. mai bine as face ceva sigur... Poti sa dispari nezicand nimic... sunt sigura ca se pot face scenarii.
+La ea probabil ca e mai simplu, dupa o vreme va fi crezut ca a intalnit fantome si cine a intalnit fantome... nu ramane cine era inainte... presupun.
+Si imi mai amintesc de un scurt fragmentel in care povesteste un copil ca prefera sa mearga la cofetarie cu tata.. pentru ca desi si tata si mama nu fac decat sa ceara cate o prajitura, tata o face in modul cel mai natural.. iar mama o 
+face.. ca si cand i-ar fi teama sa nu deranjeze, sa nu se fi terminat prajiturile, sa nu vorbeasca prea tare, cu vreun ton nepotrivit etc etc. Imi pare mai usor pesemne sa zic ce inseamna nenatural...e unul dintre inamicii mei.. alaturi de ideea de joc.
+Legatura cu actuala lectura fiind ca.. suspectez un nenatural la mijloc :) Nu-i nimic...
+Si inca ceva... aveam un coleg despre care as spune ca e de departe cea mai enciclopedica persoana pe care o cunosc. Si pentru ca am vorbit cu el intr-un moment in care ma interesa cum se face ca 2 oameni care adorm suparati stiu 
+ca sunt suparati chiar si atunci cand dorm (mda, dubios.. daca m-ar duce mintea la o poveste echivalenta care sa spuna mai putin, probabil ca as servi-o pe cealalta). Sarind peste detalii, cred ca ma asteptam sa-mi spuna ca 
+doar mi se pare si sa dea in.. orice altceva.
+Cu toate astea, raspunsul a fost: cum din ce cauza?! evident, energia! 
+Puff... energia... uitasem ca exista o asemenea abstractiune si nu m-as fi gandit sa o aplic cazului. Si de atunci a ramas asa.. atunci cand nu gasesc vreo 
+explicatie mai logica, ramane ca e energia. O data.. nu-mi vine sa spun ca am simtit energia - nu pare genul de discurs acceptabil pentru mine, adica - dar o singura, neasteptata si uimitoare data am avut impresia ca exista o 
+deschidere sau o caldura care nu erau justificate de nimic si care nu au justificat (niciodata) nimic.
+As putea scrie mai mult? Sigur. 
+Iau in calcul sa o fac? Nu. 
+De ce? Orice as scrie... e cam acelasi lucru.. sau va deveni intr-un timp acelasi lucru... care s-ar putea numi... interes. 
+E asa o raritate interesul asta? Poate ca nu... 
+As fi putut scrie (fiind atat de vag) oricui? Si asta e posibil... dar numai unei persoane intr-o epoca. 
+De ce? Pentru ca nu e loc de mai multe, evident. 
+Oare ai prefera sa scriu mai mult? Uite aici e problema... daca am fi schimbat macar un cuvant... as fi avut sansa sa incerc un raspuns.
+O sa trimit asta? Oo, da. 
+Cand? Joi, 26 mai, seara. 
+O sa ma mai gandesc la asta? Sigur, o vreme. 
+O sa mai scriu in scrisoare? Sigur, ma ajuta sa rezolv o lipsa, sa scap de ce e prea mult. Mi-e frica sa nu devina prea mult.
+O sa vreau sa vad cumva ce reactie o sa ai? Da, oarecum, dar cu lipsa asta pot trai foarte bine.
+O sa vreau sa be intalnim accidental? Greu de spus... dupa cum ziceam, scriu asta ca sa scap de importanta acestui fapt... sa nu conteze prea tare daca ne mai intalnim. Tot ce am de spus va fi spus aici si se va conserva intocmai.
+Voi mai descoperi lucruri pe care as fi vrut sa le spun? Tot ce se poate, dar probabil ca nu vor  fi descoperiri spontane. Cel mai probabil imi voi reaminti cand voi da peste povesti frumoase pe care sa vreau sa (ti) le spun... sau 
+sa le spun acelor oameni care au intrat (in feluri dubioase) in categoria mea de interes. 
+(Imi aminteste asta de e poveste?) Da. Ce faci cand cineva dispare (din raza ta)? Pe termen lung, poti sa le alini cu povestea: dupa calitatea martorilor a caror parere conteaza in viata cuiva.. persoanele pot fi in una din 3 categorii: 
+vedetele (pentru ele conteaza parerea - despre persoana lor - a maselor largi de oameni)
+organizatorii de serate, sa zicem (pentru ei conteaza parerea rudelor, prietenilor, catorva apropiati deci)
+visatorii (nu imi place titulatura) (pentru care conteaza parerea .. persoanelor absente... care au disparut din raza, va sa zica. Ei sunt insotiti de ochiul bunicului mort sau al personajului din carte.)
+Cine a disparut? Cine si la ce ar putea visa?... Nu mai precizez.
+De ce? Pentru ca nu e nevoie.
+Sunt sigura de asta? Nu.
+Si atunci? Poate ca nu e descifrabil gandul meu, dar refuz sa cred ca voi fi ratat cu totul impresia generala.
+Iti plac povestile? Nu ma bazez pe asta. In caz ca nu, o sa ramana un fel de compliment. Sper sa se inteleaga macar ca asta e. In caz ca da... am avut noroc.
+E mai interesant asa decat altfel? Poate.. 
+Si daca pe parcurs te gandesti ca sunt nebuna si ca nu merita sa mai incerci sa urmaresti? Nu sunt nebuna (adica ma pot justifica in fata oricarui juriu). Inseamna ca voi fi ratat cu totul impresia generala. Nu am vreun exemplu 
+ca am facut asta vreodata.
+Mai stiu povesti? Da, imi amintesc de 2... una despre scrisori si una despre fapte importante omise.
+Dar care e povestea ta preferata? Cred ca una despre oameni care pot sa zboare...
+Sunt relevante pentru cazul de fata? Absolut.
+Nu cumva reusesti sa legi toate povestile care iti plac de cazul de fata? Ba cred ca da...
+De ce? Pentru ca sunt povesti.. si cadou mai frumos nu stiu pe lumea asta.
+Asadar povestile...
+Vrei sa le spui? Da
+Si care e problema? Vreau sa le spun, nu sa le scriu.
+Si care e mai departe problema? etc.
+Povestile sunt problema ta? Nu stiu, asa se deduce?
+Ti-ar placea sa primesti cadou povesti? Numai daca e un cadou natural... Mai mult cred ca vreau sa scap eu de greutatea lor.
+De ce sunt importante povestile astea? Sunt tot ce aflu eu despre viata si ma ajuta sa ma orientez prin ea.
+E viata o problema coplesitoare? Nu stiu... chiar nu ma intereseaza.. 
+Povestile? E prea mult de scris si poate ca nici nu iti plac...
+Tu crezi ca vei avea mai multe sanse? Dupa ce pleci, nu va mai fi nimic. - Stiu.
+Au autorii povestilor nume? Sigur... 
+Nu vrei sa recomanzi pur si simplu povestea? Nu, vreau s-o spun eu, ca sa evidentiez ce vreau eu.
+Cate povesti stii? Cel mai bine imi amintesc de ele daca gasesc pe cineva caruia sa vreau sa i le spun.
+Nu le spui acasa? Ba cateodata da...
+Macar povestea cu zburatorul... Era odata un adolescent care provenea dintr-o familie ciudata si speciala si afla (pe percursul cartii) ca are stramosi care stiau sa zboare.. matusi si bunici etc. (stilul meu preferat este realismul magic).
+Cand la un moment dat cineva vrea sa il omoare, el se impinge usor in varful piciorului si pare ca se ridica sa zboare. De ce e in vreun fel interesant asta? Daca si eu pot sa zbor sau sa fac alte super-lucruri neasteptate... 
+se poate sa nu aflu niciodata? Pare ca da.
+Povestea cu scrisorile: un nepot este inginer si lucreaza pe un santier dintr-o alta tara. Corespondeaza cu bunica, intre ei existand o relatie de afectiune cu totul speciala. Nepotul moare tragic intr-un accident, iar mama preia
+sarcina de a scrie scrisori ca din partea nepotului (ca sa n-o indurereze pe bunica). Apoi bunica insasi moare... si mama continua corespondenta intre nepot si bunica, substituinde-se ambelor parti.
+Povestea 
+
+
+Clone repository
+•Your git url is available at 
+Git clone 
+$ git clone -b develop https://sgithub.fr.world.socgen/mzayani071510/cascade-sandbox.git
+
+Update forked repository
+($ git remote add team https://sgithub.fr.world.socgen/CTT-Cascade/cascade-sandbox.git)
+$ git fetch team
+$ git pull --rebase team/develop
+
+Branching
+Create branch
+$ git checkout -b <branchName> team/develop
+
+Push branch to remote repository
+-f : define TBD
+$ git push -f origin <branchName>
+
+Switch from branch locally
+$ git checkout <branchName>
+
+pushing commit
+
+Show pending changes
+$ git status
+
+Staging
+Add all changes
+$ git add --all
+
+or select the artifacts
+$ git add <artifactName>
+
+Commit
+$ git commit -m "<Commit message>"    
+
+Push
+$ git push origin <branchName>
+
+Best practices
+You must update your repositories daily (at least)
+$ git pull --rebase team/develop
+you must push to your remote repository daily (at least)
+$ git push -f origin <branchName>
+=======================
+
+delete local branch: git branch -d branch_name
+git branch -r //remote branches
+fetch remote branch: git checkout -b CCD-2913 origin/CCD-2913
+delete remote branch: git push origin --delete CCD-2913
+
+git-checkout - Switch branches or restore working tree files
+git fetch+merge = pull
+
+git clone -b develop https://sgithub.fr.world.socgen/mionita010716/cascade-server.git
+git remote add team https://sgithub.fr.world.socgen/CTT-Cascade/cascade-server.git
+
+
+
