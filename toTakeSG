@@ -47,7 +47,12 @@ Because HTTP is stateless, in order to associate a request to any other request,
 Cookies or URL parameters ( for ex. like http://example.com/myPage?asd=lol&boo=no ) are both suitable ways to transport data between 2 or more request. However they are not good in case you don't want that data to be readable/editable on client side.
 The solution is to store that data server side, give it an "id", and let the client only know (and pass back at every http request) that id. There you go, sessions implemented. Or you can use the client as a convenient remote storage, but you would encrypt the data and keep the secret server-side.
 
-
+SocGen
+Application used for sales, traders and middle office to perform the required workflow including deal creation, price request to trader, 
+pricing by trader, validation from sales, validation from trader, execute deal by sales, deal processing in middle office (insert in eliot) etc.
+While performing all deal (option, future, swap etc.) trading steps Cascade needs to connect to several different systems in order to
+get data (metadata, commissions - GAIA, deal matching - MarkitWire/Swapswire), , or write data (Eliot via Corba/Hessian).
+Struts and Tiles, Oracle, WL, Hibernate
 
 Micro services platform written in Scala (spray framework) performing various operations as top-up or gifting.
 Platform is deployed in Bluemix Cloud environment.
@@ -142,6 +147,8 @@ tocanita shaorma salata de ardei
 paste+legume
 musaca
 chiftelute cu legume
+spanac baby
+ciulama ciuperci
 
 salata chia
 
@@ -192,6 +199,10 @@ m-am (~imprietenit) cu sacul de iarba -ce ai facut? -m-am intragostit de sacul d
 ai lama de ras, sa tai tepii ma gandesc - nu am - o sa ai cand cresti
 na! ii zic prescurtat (nanei)
 o acadea cu rosu, galben si albastru - cu ce seamana> - cu chilotii tai :))))
+si cum s-au mai lovit copiii? s-au muscat cu cainii
+avem si bomboane de rezerva, daca se strica roata de la masina umflam bomboana si o montam
+unde e mama mea? unde e mama mea? (cand ma suparam pe el si il strangeam de mana de exemplu)
+cand plange si e suparat si nu inteleg ce are, intreb: ce ai? -nu stiiiiu! (si mai suparat)
 
 assembly + XL deploy
 --------------------
